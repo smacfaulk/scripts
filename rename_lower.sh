@@ -1,0 +1,1 @@
+for /r "DIRPATH" %D in (.) do @for /f "eol=: delims=" %F in ('dir /l/b/ad "%D"') do @ren "%D\%F" "%F"
